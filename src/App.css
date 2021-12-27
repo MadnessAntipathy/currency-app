@@ -3,29 +3,130 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  /* height: 40vmin; */
+  /* pointer-events: none; */
+  display: flex;
+
+  justify-content: flex-start;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #FFFFFF;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-body {
+  /* background-color: #282c34; */
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.CardHeader {
+  background-color: #FFFFFF;
+}
+
+.CardBody {
+  /* background-color: #282c34; */
+}
+
+.CurrencyCard {
+  color:#282c34;
+  width:100%;
+  min-height: 50vh;
+}
+
+.CurrencyCardBody {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CurrencyTableSelection {
+  display: flex;
+  width:80%;
+  font-size: 20px;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.CurrencySelectionInput {
+  width:100px;
+}
+
+.CurrencyTable {
+  width:80%;
+  border:1px solid rgba(0,0,0,0.5);
+  table-layout: fixed;
+  font-size: 20px;
+}
+
+.CurrencyTableHeaderCellBorder {
+  width:100%;
+  border:1px solid rgba(0,0,0,0.5);
+  table-layout: fixed;
+  font-size: 15px;
+  resize:horizontal;
+  overflow:auto;
+}
+
+.CurrencyTableCellBorder {
+  width:100%;
+  border:1px solid rgba(0,0,0,0.5);
+  table-layout: fixed;
+  font-size: 15px;
+}
+
+.MainCard {
+  width:100%;
+}
+
+.Paginate {
+  list-style: none;
+  display: flex;
+}
+
+.PaginateLink {
+  cursor: pointer;
+  margin:5px;
+  color:#282c34;
+  text-decoration-line: none;
+}
+
+.ActivePage {
+  font-weight: bold;
+}
+
+.MenuItems {
+  display: flex;
+
+  flex-direction: row;
+}
+
+.MenuButton {
+  margin: 0px 5px;
 }
 
 @keyframes App-logo-spin {
